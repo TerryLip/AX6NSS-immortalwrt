@@ -19,7 +19,8 @@ case "$FIRMWARE" in
 	linksys,mx2000|\
 	linksys,mx5500|\
 	linksys,spnmx56|\
-	yuncore,ax830)
+	yuncore,ax830|\
+	yuncore,ax850)
 		caldata_extract "0:ART" 0x1000 0x20000
 		ath11k_remove_regdomain
 		;;
@@ -52,7 +53,8 @@ case "$FIRMWARE" in
 	case "$board" in
 	linksys,mr5500|\
 	linksys,mx5500|\
-	linksys,spnmx56)
+	linksys,spnmx56|\
+	yuncore,ax850)
 		caldata_extract "0:ART" 0x26800 0x20000
 		ath11k_remove_regdomain
 		;;
