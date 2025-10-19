@@ -40,7 +40,7 @@ define Device/aliyun_ap8220
 	DEVICE_MODEL := AP8220
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
-	SOC := ipq8071
+	SOC := ipq8072
 	DEVICE_DTS_CONFIG := config@ac02
 	DEVICE_PACKAGES := ipq-wifi-aliyun_ap8220 kmod-hci-uart kmod-bluetooth kmod-bluetooth-6lowpan
 endef
