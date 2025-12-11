@@ -133,7 +133,7 @@ Signed-off-by: Sathishkumar Muruganandam <murugana@codeaurora.org>
  
 +void ieee80211_rx_nss_notify_4addr(struct net_device *dev, u8 *sta_addr)
 +{
-+	cfg80211_rx_unexpected_4addr_frame(dev, sta_addr, GFP_ATOMIC);
++	cfg80211_rx_unexpected_4addr_frame(dev, sta_addr, 0, GFP_ATOMIC);
 +}
 +EXPORT_SYMBOL(ieee80211_rx_nss_notify_4addr);
 +
